@@ -6,14 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-/* Inter-tight Light */
-@font-face {
-  font-family: "Inter-tight";
-  src: url("../font/InterTight-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
 /* Inter-tight Medium */
 @font-face {
   font-family: "Inter-tight";
@@ -27,14 +19,6 @@
   font-family: "Inter-tight";
   src: url("../font/InterTight-SemiBold.woff2") format("woff2");
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-/* Inter-tight Bold */
-@font-face {
-  font-family: "Inter-tight";
-  src: url("../font/InterTight-Bold.woff2") format("woff2");
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -58,23 +42,7 @@
 @font-face {
   font-family: "Geologica";
   src: url("../font/Geologica-SemiBold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-/* Geologica Bold*/
-@font-face {
-  font-family: "Geologica";
-  src: url("../font/Geologica-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-/* Geologica Light*/
-@font-face {
-  font-family: "Geologica";
-  src: url("../font/Geologica-Light.woff2") format("woff2");
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
