@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>GoodClicks - Защита от скликивания</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Защита от скликивания">
+    <meta name="keywords" content="Защита от скликивания">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    </noscript>
+</head>
+<body>
+
+    <div id="wrapper">
+        <header class="header">
+            <div class="_container">
+                <div class="header__wrap">
+                    <a href="#" class="header__logo"><img src="logo.svg" alt="logo"></a>
+                    <nav class="header__nav-main">
+                        <ul class="header__nav">
+                          <li><a class="header__nav-link scrollTo" href="#audit">Для кого</a></li>
+                          <li><a class="header__nav-link scrollTo" href="#interface">Как работает</a></li>
+                          <li><a class="header__nav-link scrollTo" href="#case">Кейсы</a></li>
+                          <li><a class="header__nav-link scrollTo" href="#tariffs">Тарифы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__login">
+                        <a href="#" class="header__login-btn light__btn">
+                            <svg width="17" height="17" class="icon icon-user">
+                                <use xlink:href="img/sprite.svg#user-circle"></use>
+                            </svg>
+                            <span>Личный кабинет</span>
+                        </a>
+                    </div>
+                    <div class="header__burger js-burger _d-mx-l"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="banner">
+                <div class="banner__wrap-main">
+                    <div class="_container">
+                        <div class="banner__content">
+                            <h1 class="banner__title">В <svg class="icon _bg-pink" width="32" height="32">
+                                    <use xlink:href="img/sprite.svg#yadirect"></use>
+                                </svg>
+                                <span class="_c-pink">Яндекс Директе</span>
+                                часть бюджета может уходить впустую
+                            </h1>
+                            <p class="_c-greenGrayish">Мы бесплатно проверим ваш трафик на ботов и скликивание и покажем реальные цифры — без подключения и обязательств</p>
+                            <div class="banner__show">
+                                <a class="banner__show-btn primary__btn" href="#">Проверить рекламу</a>
+                                <div class="banner__show-txt _c-greenGrayish _d-mn-l">Ничего не подключаем.<br> Просто показываем цифры</div>
+                            </div>
+                        </div>
+                        <picture>
+                            <source srcset="img/banner-bg-mob.webp" media="(max-width: 991px)">
+                            <img class="banner__bg" src="img/banner-bg.webp" alt="bg">
+                        </picture>
+                        <div class="banner__info _c-greenGrayish">
+                            Подходит, если вы ведёте рекламу сами и не хотите разбираться в сложных инструментах
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="partners">
+                <div class='partners__marq'>
+                    <img loading="lazy" src='img/partners/starbucks.png'>
+                    <img loading="lazy" src='img/partners/ford.png'>
+                    <img loading="lazy" src='img/partners/eldorado.png'>
+                    <img loading="lazy" src='img/partners/media-markt.png'>
+                    <img loading="lazy" src='img/partners/himki.png'>
+                    <img loading="lazy" src='img/partners/kia.png'>
+                    <img loading="lazy" src='img/partners/metro.png'>
+                    <img loading="lazy" src='img/partners/linzmaster.png'>
+                    <img loading="lazy" src='img/partners/axe.png'>
+                    <img loading="lazy" src='img/partners/kfc.png'>
+                </div>
+            </div>
+
+            <section class="know _py">
+                <div class="_container">
+                    <div class="_title _w-100 _text-center" data-inviewport="obs__moveBottom">
+                        <h2>Узнаёте свою ситуацию?</h2>
+                    </div>
+                    <div class="know__wrap">
+                        <div class="know__item" data-inviewport="obs__bounce">
+                            <div class="know__item-icon" data-inviewport="obs__bounce">
+                                <svg class="icon" width="44" height="44">
+                                    <use xlink:href="img/sprite.svg#know-1"></use>
+                                </svg>
+                            </div>
+                            <div class="know__item-content" data-inviewport="obs__bounce">
+                                <div class="know__item-title">Реклама приносит заявки, но рост остановился</div>
+                                <div class="know__item-txt _c-greenGrayish">Кажется, что выжали максимум</div>
+                            </div>
+                        </div>
+                        <div class="know__item" data-inviewport="obs__bounce" data-delay="0.1s">
+                            <div class="know__item-icon" data-inviewport="obs__bounce" data-delay="0.1s">
+                                <svg class="icon" width="44" height="44">
+                                    <use xlink:href="img/sprite.svg#know-2"></use>
+                                </svg>
+                            </div>
+                            <div class="know__item-content" data-inviewport="obs__bounce" data-delay="0.1s">
+                                <div class="know__item-title">Заявки поступают, но бюджет расходуется быстро</div>
+                                <div class="know__item-txt _c-greenGrayish">Понимаю, что скликивают — не знаю, что делать</div>
+                            </div>
+                        </div>
+                        <div class="know__item" data-inviewport="obs__bounce" data-delay="0.2s">
+                            <div class="know__item-icon" data-inviewport="obs__bounce" data-delay="0.2s">
+                                <svg class="icon" width="44" height="44">
+                                    <use xlink:href="img/sprite.svg#know-3"></use>
+                                </svg>
+                            </div>
+                            <div class="know__item-content" data-inviewport="obs__bounce" data-delay="0.2s">
+                                <div class="know__item-title">Реклама не дала заявок</div>
+                                <div class="know__item-txt _c-greenGrayish">Считаю Яндекс Директ бесполезным</div>
+                            </div>
+                        </div>
+                        <div class="know__item" data-inviewport="obs__bounce" data-delay="0.3s">
+                            <div class="know__item-icon" data-inviewport="obs__bounce" data-delay="0.3s">
+                                <svg class="icon" width="44" height="44">
+                                    <use xlink:href="img/sprite.svg#know-4"></use>
+                                </svg>
+                            </div>
+                            <div class="know__item-content" data-inviewport="obs__bounce" data-delay="0.3s">
+                                <div class="know__item-title">Рекламу точно скликивают</div>
+                                <div class="know__item-txt _c-greenGrayish">Боты, конкуренты, слив бюджета — и ноль контроля</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_w-100 _text-center _c-greenGrayish" data-inviewport="obs__moveBottom" data-delay="0.4s">
+                        <div class="know__info">
+                            Во всех этих ситуациях причина часто одна - мусорный трафик, который сложно заметить глазами
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clicking _py">
+                <div class="_container">
+                    <div class="_title _w-100 _text-center" data-inviewport="obs__moveBottom">
+                        <h2>Скликивание редко выглядит очевидно</h2>
+                        <p class="_c-greenGrayish">Чаще всего оно просто незаметно съедает часть бюджета. Вы списываете это на настройки, сезонность или спрос — и просто продолжаете терять бюджет</p>
+                    </div>
+                    <div class="clicking__wrap">
+                        <div class="clicking__item clicking__item1" data-inviewport="obs__bounce">
+                            <div class="clicking__item-title _text-center">Без фильтрации трафика</div>
+                            <div class="clicking__item-table">
+                                <p>
+                                    Бюджет
+                                    <span>50 000 ₽</span>
+                                </p>
+                                <p>
+                                    Клики
+                                    <span>1 200</span>
+                                </p>
+                                <p>
+                                    Заявки
+                                    <span>20</span>
+                                </p>
+                                <p>
+                                    Цена заявки
+                                    <span class="_c-red">2 500 ₽</span>
+                                </p>
+                            </div>
+                            <p class="_c-greenGrayish _text-center _mb-0">Всё выглядит нормально: клики есть, реклама работает</p>
+                        </div>
+                        <div class="clicking__item clicking__item2 _bg-green" data-inviewport="obs__bounce">
+                            <span class="clicking__item-tip">Вы не видите ботов — вы видите просто «клики»</span>
+                            <div class="clicking__item-title _text-center _c-white">После очистки трафика</div>
+                            <div class="clicking__item-table">
+                                <p>
+                                    Бюджет
+                                    <span>50 000 ₽</span>
+                                </p>
+                                <p>
+                                    Клики
+                                    <span>900</span>
+                                </p>
+                                <p>
+                                    Заявки
+                                    <span>20</span>
+                                </p>
+                                <p>
+                                    Цена заявки
+                                    <span class="_c-green">2 000 ₽</span>
+                                </p>
+                            </div>
+                            <p class="_c-white-075 _text-center _mb-0">Меньше кликов - те же заявки</p>
+                        </div>
+                    </div>
+                    <div class="clicking__show" data-inviewport="obs__moveBottom">
+                        <a class="clicking__show-btn primary__btn" href="#">Проверить</a>
+                        <div class="clicking__show-txt _c-greenGrayish">Проверим, есть ли такие<br> потери в вашей рекламе</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="improve _py">
+                <div class="_container">
+                    <div class="improve__wrap _w-100">
+                        <picture>
+                            <source srcset="img/improve-secure-mob.webp" media="(max-width: 991px)">
+                            <img data-inviewport="obs__moveBottom" class="improve__img" src="img/improve-secure.webp" alt="img">
+                        </picture>
+                        <div class="improve__col">
+                            <h2 class="improve__title" data-inviewport="obs__moveBottom">
+                                Мы не улучшаем рекламу
+                                <span class="_c-green">Мы убираем мусорный трафик</span>
+                            </h2>
+                            <div class="_d-mn-l">
+                                <div class="improve__item" data-inviewport="obs__moveBottom">
+                                    <svg class="icon" width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#traingle"></use>
+                                    </svg>
+                                    Выявляем ботов и подозрительные источники
+                                </div>
+                                <div class="improve__item" data-inviewport="obs__moveBottom" data-delay="0.1s">
+                                    <svg class="icon" width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#ix"></use>
+                                    </svg>
+                                    Блокируем им показ рекламы в будущем
+                                </div>
+                                <div class="improve__item" data-inviewport="obs__moveBottom" data-delay="0.2s">
+                                    <svg class="icon" width="44" height="44">
+                                        <use xlink:href="img/sprite.svg#cros"></use>
+                                    </svg>
+                                    Вы продолжаете платить только за живых людей
+                                </div>
+                            </div>
+                            <p class="improve__info _c-greenGrayish _mb-0" data-inviewport="obs__moveBottom" data-delay="0.3s">Сервис не может «сломать» рекламу. Его можно отключить в любой момент — всё вернётся как было.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interface _py" id="interface">
+                <div class="interface__wrap-main">
+                    <div class="_container">
+                        <div class="_title _w-100 _text-center" data-inviewport="obs__moveBottom">
+                            <h2>Сервис без сложных&nbsp;настроек</h2>
+                            <p class="_c-greenGrayish">Подходит, если вы не маркетолог и не хотите разбираться в фильтрах, ботах и алгоритмах</p>
+                        </div>
+                        <div class="interface__steps">
+                            <div class="interface__step" data-inviewport="obs__moveBottom">
+                                <div class="interface__step-num">
+                                    <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.84494 35.0803C1.91961 31.5782 0.940062 27.6347 1.00284 23.6387C1.06561 19.6427 2.16854 15.732 4.20293 12.292C6.23732 8.85208 9.13295 6.00158 12.6044 4.02147C16.0759 2.04137 20.0035 0.999999 24 0.999999" stroke="#009247" stroke-width="2"/>
+                                    </svg>
+                                    <span>1</span></div>
+                                <div class="interface__step-txt"><p class="_mb-0">Подключили - занимает ~10&nbsp;минут</p></div>
+                            </div>
+                            <div class="interface__step" data-inviewport="obs__moveBottom" data-delay="0.1s">
+                                <div class="interface__step-num">
+                                    <svg width="45" height="48" viewBox="0 0 45 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M43.4195 36.324C41.2781 39.6984 38.2944 42.4565 34.7624 44.3266C31.2304 46.1967 27.2721 47.1142 23.2775 46.9886C19.283 46.8631 15.3901 45.6989 11.9825 43.6107C8.57494 41.5225 5.77028 38.5825 3.84494 35.0803C1.91961 31.5782 0.940062 27.6347 1.00284 23.6387C1.06561 19.6427 2.16854 15.732 4.20293 12.292C6.23732 8.85208 9.13295 6.00158 12.6044 4.02147C16.0759 2.04137 20.0035 0.999999 24 0.999999" stroke="#009247" stroke-width="2"/>
+                                    </svg>
+                                    <span>2</span></div>
+                                <div class="interface__step-txt"><p class="_mb-0">Сервис сам анализирует клики и поведение</p></div>
+                            </div>
+                            <div class="interface__step" data-inviewport="obs__moveBottom" data-delay="0.2s">
+                                <div class="interface__step-num">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 0.999999C27.0204 0.999999 30.0112 1.59491 32.8017 2.75077C35.5922 3.90663 38.1277 5.6008 40.2635 7.73654C42.3992 9.87229 44.0934 12.4078 45.2492 15.1983C46.4051 17.9888 47 20.9796 47 24C47 27.0204 46.4051 30.0112 45.2492 32.8017C44.0934 35.5922 42.3992 38.1277 40.2635 40.2635C38.1277 42.3992 35.5922 44.0934 32.8017 45.2492C30.0112 46.4051 27.0204 47 24 47C20.9796 47 17.9888 46.4051 15.1983 45.2492C12.4078 44.0934 9.87229 42.3992 7.73654 40.2635C5.60079 38.1277 3.90663 35.5922 2.75077 32.8017C1.59491 30.0112 0.999999 27.0204 0.999999 24C0.999999 20.9796 1.59491 17.9888 2.75077 15.1983C3.90663 12.4078 5.6008 9.87229 7.73654 7.73654C9.87229 5.60079 12.4078 3.90663 15.1983 2.75077C17.9888 1.59491 20.9796 0.999999 24 0.999999L24 0.999999Z" stroke="white" stroke-width="2"/>
+                                    <path d="M24 0.999999C27.0204 0.999999 30.0112 1.59491 32.8017 2.75077C35.5922 3.90663 38.1277 5.6008 40.2635 7.73654C42.3992 9.87229 44.0934 12.4078 45.2492 15.1983C46.4051 17.9888 47 20.9796 47 24C47 27.0204 46.4051 30.0112 45.2492 32.8017C44.0934 35.5922 42.3992 38.1277 40.2635 40.2635C38.1277 42.3992 35.5922 44.0934 32.8017 45.2492C30.0112 46.4051 27.0204 47 24 47C20.9796 47 17.9888 46.4051 15.1983 45.2492C12.4078 44.0934 9.87229 42.3992 7.73654 40.2635C5.60079 38.1277 3.90663 35.5922 2.75077 32.8017C1.59491 30.0112 0.999999 27.0204 0.999999 24C0.999999 20.9796 1.59491 17.9888 2.75077 15.1983C3.90663 12.4078 5.6008 9.87229 7.73654 7.73654C9.87229 5.60079 12.4078 3.90663 15.1983 2.75077C17.9888 1.59491 20.9796 0.999999 24 0.999999L24 0.999999Z" stroke="#009247" stroke-width="2"/>
+                                    </svg>
+                                    <span>3</span></div>
+                                <div class="interface__step-txt"><p class="_mb-0">Деньги перестают уходить впустую</p></div>
+                            </div>
+                        </div>
+                        <div class="interface__img" data-inviewport>
+                            <img loading="lazy" src="img/interface.webp" alt="interface">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case _py" id="case">
+                <div class="_container">
+                    <div class="_title _w-100 _text-center" data-inviewport="obs__moveBottom">
+                        <h2>Реальные кабинеты. Реальные цифры</h2>
+                        <p class="_c-greenGrayish">Без «роста в 10 раз» — только то, что реально меняется после очистки трафика</p>
+                    </div>
+                    <div class="case__wrap">
+                        <div class="case__item" data-inviewport="obs__moveBottom">
+                            <div class="case__left">
+                                <div class="case__desc">
+                                    <ul class="case__desc-tags">
+                                        <li class="case__desc-tags-default"><span>Кейс</span> №1</li>
+                                        <li>Ремонт квартир</li>
+                                        <li>~60 000 ₽/мес</li>
+                                    </ul>
+                                    <div class="case__desc-title">После очистки трафика цена заявки снизилась, несмотря на падение кликов</div>
+                                </div>
+                            </div>
+                            <div class="case__right _d-mn-l">
+                                <div class="case__view">
+                                    <div class="case__view-cards">
+                                        <div class="case__view-card case__view-card-bad">
+                                            <ul class="case__view-card-list _c-greenGrayish">
+                                                <li>Было</li>
+                                                <li>1 200 кликов</li>
+                                                <li>18 заявок</li>
+                                                <li>2 700 ₽</li>
+                                            </ul>
+                                        </div>
+                                        <div class="case__view-card case__view-card-good">
+                                            <ul class="case__view-card-list _c-white">
+                                                <li>Стало</li>
+                                                <li>850 кликов</li>
+                                                <li>19 заявок</li>
+                                                <li>2 100 ₽</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="case__view-info">
+                                        <p class="_c-greenGrayish">Часть кликов оказалась мусорной - после фильтрации бюджет стал работать эффективнее</p>
+                                        <a href="#" class="light__btn">
+                                            <span>Смотреть показатели</span>
+                                            <svg width="15" height="15" class="icon icon-table">
+                                                <use xlink:href="img/sprite.svg#table"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case__item" data-inviewport="obs__moveBottom" data-delay="0.1s">
+                            <div class="case__left">
+                                <div class="case__desc">
+                                    <ul class="case__desc-tags">
+                                        <li class="case__desc-tags-default"><span>Кейс</span> №1</li>
+                                        <li>Ремонт квартир</li>
+                                        <li>~60 000 ₽/мес</li>
+                                    </ul>
+                                    <div class="case__desc-title">После очистки трафика цена заявки снизилась, несмотря на падение кликов</div>
+                                </div>
+                            </div>
+                            <div class="case__right _d-mn-l">
+                                <div class="case__view">
+                                    <div class="case__view-cards">
+                                        <div class="case__view-card case__view-card-bad">
+                                            <ul class="case__view-card-list _c-greenGrayish">
+                                                <li>Было</li>
+                                                <li>1 200 кликов</li>
+                                                <li>18 заявок</li>
+                                                <li>2 700 ₽</li>
+                                            </ul>
+                                        </div>
+                                        <div class="case__view-card case__view-card-good">
+                                            <ul class="case__view-card-list _c-white">
+                                                <li>Стало</li>
+                                                <li>850 кликов</li>
+                                                <li>19 заявок</li>
+                                                <li>2 100 ₽</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="case__view-info">
+                                        <p class="_c-greenGrayish">Часть кликов оказалась мусорной - после фильтрации бюджет стал работать эффективнее</p>
+                                        <a href="#" class="light__btn">
+                                            <span>Смотреть показатели</span>
+                                            <svg width="15" height="15" class="icon icon-table">
+                                                <use xlink:href="img/sprite.svg#table"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case__item" data-inviewport="obs__moveBottom" data-delay="0.2s">
+                            <div class="case__left">
+                                <div class="case__desc">
+                                    <ul class="case__desc-tags">
+                                        <li class="case__desc-tags-default"><span>Кейс</span> №1</li>
+                                        <li>Ремонт квартир</li>
+                                        <li>~60 000 ₽/мес</li>
+                                    </ul>
+                                    <div class="case__desc-title">После очистки трафика цена заявки снизилась, несмотря на падение кликов</div>
+                                </div>
+                            </div>
+                            <div class="case__right">
+                                <div class="case__view">
+                                    <div class="case__view-cards">
+                                        <div class="case__view-card case__view-card-bad">
+                                            <ul class="case__view-card-list _c-greenGrayish">
+                                                <li>Было</li>
+                                                <li>1 200 кликов</li>
+                                                <li>18 заявок</li>
+                                                <li>2 700 ₽</li>
+                                            </ul>
+                                        </div>
+                                        <div class="case__view-card case__view-card-good">
+                                            <ul class="case__view-card-list _c-white">
+                                                <li>Стало</li>
+                                                <li>850 кликов</li>
+                                                <li>19 заявок</li>
+                                                <li>2 100 ₽</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="case__view-info">
+                                        <p class="_c-greenGrayish">Часть кликов оказалась мусорной - после фильтрации бюджет стал работать эффективнее</p>
+                                        <a href="#" class="light__btn">
+                                            <span>Смотреть показатели</span>
+                                            <svg width="15" height="15" class="icon icon-table">
+                                                <use xlink:href="img/sprite.svg#table"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="swim _py">
+                <div class="_container">
+                    <div class="swim__wrap" data-inviewport="obs__moveBottom">
+                        <img data-inviewport="obs__bounce" loading="lazy" class="swim__img" src="img/swim.webp" alt="img">
+                        <div class="_title _w-100 _text-center">
+                            <h2>В среднем 18% рекламного бюджета может уходить в пустоту</h2>
+                            <p class="swim__subtitle _c-greenGrayish">Не обязательно менять рекламу, чтобы получать больше заявок. Иногда достаточно убрать тех, кто не является реальными клиентами</p>
+                        </div>
+                        <a href="#" class="swim__btn primary__btn">Проверить трафик</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="compare _py">
+                <div class="_container">
+                    <div class="compare__wrap _bg-green" data-inviewport="obs__moveBottom">
+                        <div class="compare__info" data-inviewport="obs__bounce" data-delay="0.1s">
+                            <h2 class="_c-white">А разве Яндекс сам это не фильтрует?</h2>
+                            <p class="compare__info-txt">Яндекс действительно фильтрует часть фрода. Но он защищает свою систему, а не ваш бюджет</p>
+                        </div>
+                        <div class="compare__cards" data-inviewport="obs__bounce" data-delay="0.2s">
+                            <div class="compare__card compare__card-yandex" data-inviewport="obs__bounce" data-delay="0.3s">
+                                <div class="compare__card-pic">
+                                    <img loading="lazy" src="img/yandex-pic.svg" alt="yandex">
+                                </div>
+                                <ul class="_c-white">
+                                    <li>
+                                        <svg width="20" height="20" class="icon">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        Анализ клика 
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20" class="icon">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        Защита платформы
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="compare__card compare__card-goodclicks" data-inviewport="obs__bounce" data-delay="0.4s">
+                                <div class="compare__card-pic">
+                                    <img loading="lazy" src="img/goodclick-pic.svg" alt="goodclicks">
+                                </div>
+                                <ul class="_c-white">
+                                    <li>
+                                        <svg width="20" height="20" class="icon">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        Анализ поведения после клика
+                                    </li>
+                                    <li>
+                                        <svg width="20" height="20" class="icon">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                        </svg>
+                                        Защита ваших денег
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img data-inviewport="obs__bounce" loading="lazy" class="compare__click-img" src="img/click-filter.webp" alt="img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="tariffs _py" id="tariffs">
+                <div class="_container">
+                    <div class="_title _w-100 _text-center" data-inviewport="obs__moveBottom">
+                        <h2>Понятные тарифы без сюрпризов</h2>
+                    </div>
+                    <div class="tariffs__wrap swiper mobile-slider" data-inviewport="obs__moveBottom">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tariff">
+                                    <div class="tariff__title">
+                                        <svg class="icon" width="36" height="17">
+                                            <use xlink:href="img/sprite.svg#basic"></use>
+                                        </svg>
+                                        Базовый
+                                    </div>
+                                    <div class="tariff__price">1500 ₽</div>
+                                    <ul class="tariff__include">
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>Не более 1 сайта</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>Не более 1 сайта</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>∞ сайтов</li>
+                                    </ul>
+                                    <a href="#" class="primary__btn _w-100">Выбрать тариф</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tariff tariff__optimal" data-inviewport="obs__bounce">
+                                    <div class="tariff__gradient"></div>
+                                    <div class="tariff__popular">Самый популярный</div>
+                                    <div class="tariff__title">
+                                        <svg class="icon" width="25" height="27">
+                                            <use xlink:href="img/sprite.svg#optimal"></use>
+                                        </svg>
+                                        Оптимальный 
+                                    </div>
+                                    <div class="tariff__price">3500 ₽</div>
+                                    <ul class="tariff__include">
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>до 3 кампаний</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>до 5 кампаний</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>∞ кампаний</li>
+                                    </ul>
+                                    <a href="#" class="primary__btn _w-100">Выбрать тариф</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tariff">
+                                    <div class="tariff__title">
+                                        <svg class="icon" width="37" height="21">
+                                            <use xlink:href="img/sprite.svg#infinite"></use>
+                                        </svg>
+                                        Безлимит
+                                    </div>
+                                    <div class="tariff__price">5000 ₽</div>
+                                    <ul class="tariff__include">
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>до 1000 переходов</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>до 2000 переходов</li>
+                                        <li><svg class="icon"><use xlink:href="img/sprite.svg#star2"></use></svg>∞ переходов</li>
+                                    </ul>
+                                    <a href="#" class="primary__btn _w-100">Выбрать тариф</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chief _py">
+                <div class="chief__wrap-main">
+                    <div class="_container">
+                        <div class="_title _w-100 _text-center _c-white" data-inviewport="obs__moveBottom">
+                            <h2>Почему мы сделали этот&nbsp;сервис</h2>
+                        </div>
+                        <div class="chief__wrap" data-inviewport="obs__moveBottom">
+                            <div class="chief__img-wrap">
+                                <picture>
+                                    <source srcset="img/ivan-turin-mob.webp" media="(max-width: 767px)">
+                                    <img class="chief__img" loading="lazy" src="img/ivan-turin.webp" alt="Иван Тюрин">
+                                </picture>
+                            </div>
+                            <div class="chief__desc _c-white _text-center">
+                                <div class="chief__desc-info">
+                                    <div class="chief__desc-info-pos">Главный по продукту</div>
+                                    <div class="chief__desc-info-name">Иван Тюрин</div>
+                                </div>
+                                <div class="chief__desc-title">Мы сделали этот сервис, потому что сами сталкивались с ситуацией, когда реклама «работает», а результата нет</div>
+                                <p class="_c-white-08">В статистике Директа всё выглядит нормально, но часть бюджета просто уходит в пустоту — и это почти невозможно заметить вручную.</p>
+                                <p class="_c-white-08 _mb-0">Поэтому мы убрали всё лишнее и сделали инструмент, который сам находит и отсекает такой трафик. Без сложных настроек и без необходимости в этом разбираться</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+
+            <section class="audit _py" id="audit">
+                <div class="_container">
+                    <div class="audit__wrap">
+                        <div class="audit__item" data-inviewport="obs__moveBottom">
+                            <picture>
+                                <source srcset="img/audit-bg-mob.webp" media="(max-width: 767px)">
+                                <img class="audit__item-bg" loading="lazy" src="img/audit-bg.webp" alt="bg">
+                            </picture>
+                            <div class="audit__item-content">
+                                <div class="_title">
+                                    <h2>Начните с проверки, а&nbsp;не&nbsp;с&nbsp;покупки</h2>
+                                    <p class="_c-greenGrayish">Мы покажем цифры - решение вы примете сами</p>
+                                </div>
+                                <div class="audit__action">
+                                    <a class="audit__action-btn primary__btn" href="#">Экспресс-аудит</a>
+                                    <div class="audit__action-txt _c-greenGrayish">Без подключения.<br> Без обязательств. Без звонков.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audit__info" data-inviewport="obs__moveBottom">
+                            <h4 class="audit__info-title">Этот сервис не для всех — и это нормально</h4>
+                            <div class="audit__info-list _c-greenGrayish">
+                                <li>Если вы не используете Яндекс Директ</li>
+                                <li>Если у вас микробюджет и 2 клика в день</li>
+                                <li>Если вам важны «громкие обещания», а не цифры</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__wrap-main">
+                <div class="_container">
+                    <div class="footer__top-wrap">
+                        <div class="footer__top-col">
+                            <div class="footer__logo">
+                                <img loading="lazy" src="logo.svg" alt="logo">
+                            </div>
+                        </div>
+                        <div class="footer__top-col">
+                            <div class="footer__email _text-center">
+                                <p>Мы готовы ответить на любой ваш вопрос</p>
+                                <a class="footer__email-link" href="mailto:info@goodclicks.ru">info@goodclicks.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer__top-col">
+                            <a href="#" class="footer__login-btn light__btn">
+                                <svg width="17" height="17" class="icon icon-user">
+                                    <use xlink:href="img/sprite.svg#user-circle"></use>
+                                </svg>
+                                <span>Личный кабинет</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__middle-wrap">
+                        <div class="footer__list-wrap">
+                            <ul class="footer__list">
+                                <li><a class="scrollTo" href="#audit">Для кого</a></li>
+                                <li><a href="#">Преимущества</a></li>
+                                <li><a class="scrollTo" href="#case">Кейсы</a></li>
+                                <li><a class="scrollTo" href="#tariffs">Тарифы</a></li>
+                                <li><a href="#">Этапы работ</a></li>
+                                <li><a href="#">СМИ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__connect">
+                            <img loading="lazy" class="footer__connect-img" src="img/stat-card.png" alt="img">
+                            <div class="footer__content-content">
+                                <div class="footer__content-title">Подключите защиту всего за 5 минут</div>
+                                <p class="_c-greenGrayish _mb-0">И повысьте конверсию рекламных кампаний</p>
+                            </div>
+                            <a href="#" class="footer__connect-btn primary__btn">Подключить защиту</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottom-wrap">
+                        <div class="footer__bottom-col">
+                            <a href="#">Пользовательского соглашение</a>
+                        </div>
+                        <div class="footer__bottom-col">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer__bottom-col">
+                            <a href="#">Публичная оферта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
