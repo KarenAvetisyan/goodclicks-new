@@ -1584,6 +1584,7 @@ h2, ._h2{
     padding: 20px;
   }
   .tariff__popular{
+    top: -20px;
     font-size: 13px;
     transform: rotate(-1deg);
     padding: 7px 16px;
