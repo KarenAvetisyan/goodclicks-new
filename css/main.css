@@ -4,6 +4,7 @@
   src: url("../font/InterTight-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 /* Inter-tight Light */
 @font-face {
@@ -11,6 +12,7 @@
   src: url("../font/InterTight-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 /* Inter-tight Medium */
 @font-face {
@@ -18,6 +20,7 @@
   src: url("../font/InterTight-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 /* Inter-tight SemiBold */
 @font-face {
@@ -25,6 +28,7 @@
   src: url("../font/InterTight-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 /* Inter-tight Bold */
 @font-face {
@@ -32,6 +36,7 @@
   src: url("../font/InterTight-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 /* Geologica Regular*/
 @font-face {
@@ -39,6 +44,7 @@
   src: url("../font/Geologica-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 /* Geologica Medium*/
 @font-face {
@@ -46,6 +52,7 @@
   src: url("../font/Geologica-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 /* Geologica Bold*/
 @font-face {
@@ -53,6 +60,7 @@
   src: url("../font/Geologica-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 /* Geologica Light*/
 @font-face {
@@ -60,6 +68,7 @@
   src: url("../font/Geologica-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
