@@ -54,6 +54,14 @@
   font-style: normal;
   font-display: swap;
 }
+/* Geologica SemiBold*/
+@font-face {
+  font-family: "Geologica";
+  src: url("../font/Geologica-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 /* Geologica Bold*/
 @font-face {
   font-family: "Geologica";
