@@ -145,6 +145,55 @@ document.addEventListener('DOMContentLoaded', function(){
         handleSlider(mq);
         mq.addEventListener('change', handleSlider);
 
+        // скрипт для карточек 
+        let isActive = false;
+        function handleCardScale() {
+        const cards = document.querySelectorAll('.case__item');
+
+        const shouldBeActive = window.innerWidth < 576;
+
+        // если вышли за 576px — ОБЯЗАТЕЛЬНО сбрасываем и выходим
+        if (!shouldBeActive) {
+                if (isActive) {
+                cards.forEach(card => {
+                        card.style.transform = '';
+                });
+                isActive = false;
+                }
+                return;
+        }
+
+        isActive = true;
+
+        const lastIndex = cards.length - 1;
+
+        cards.forEach((card, index) => {
+                // последняя карточка всегда 1
+                if (index === lastIndex) {
+                card.style.transform = 'scale(1)';
+                return;
+                }
+
+                const rect = card.getBoundingClientRect();
+
+                const start = 0;
+                const end = window.innerHeight * 0.2;
+
+                let progress = (rect.top - start) / (end - start);
+                progress = 1 - progress;
+
+                progress = Math.max(0, Math.min(1, progress));
+
+                const scale = 1 - progress * 0.45;
+
+                card.style.transform = `scale(${scale})`;
+        });
+        }
+
+        // events
+        window.addEventListener('scroll', handleCardScale);
+        window.addEventListener('load', handleCardScale);
+        window.addEventListener('resize', handleCardScale);
 
         // observer, анимация на скролле 
         const inViewport = (entries, observer) => {
