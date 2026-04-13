@@ -1136,6 +1136,17 @@ h2, ._h2{
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 577px) {
+  .case__item[data-inviewport] {
+      transform: translateY(50px);
+      opacity: 0;
+      transition: transform 800ms ease, opacity 800ms ease;
+  }
+  .case__item[data-inviewport].watched {
+      transform: none;
+      opacity: 1;
+  }
+}
 @media (max-width: 1349px) {
   .case__item{
     padding-left: 0;
@@ -1184,6 +1195,20 @@ h2, ._h2{
   .case__view-info .light__btn{
     width: 100%;
     justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .case__item {
+    position: relative;
+    background-color: #fff;
+    transition: 
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.4s ease;
+  }
+  .case__item {
+    position: sticky;
+    top: 80px;
+    transition-delay: 0s!important;
   }
 }
 
