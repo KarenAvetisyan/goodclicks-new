@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function(){
                 // последняя карточка всегда 1
                 if (index === lastIndex) {
                 card.style.transform = 'scale(1)';
-                card.style.opacity = 0.5;
                 return;
                 }
 
