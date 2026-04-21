@@ -1282,8 +1282,10 @@ h2, ._h2{
 .compare__click-img{
   position: absolute;
   bottom: -45px;
+  max-width: 286px;
   left: -60px;
   z-index: -1;
+  mix-blend-mode: hard-light;
 }
 .compare__info{
   max-width: 416px;
