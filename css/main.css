@@ -885,27 +885,30 @@ h2, ._h2{
 }
 .improve__img{
   position: absolute;
-  top: -27%;
-  right: 0;
-  max-width: 59%;
+  top: 0;
+  right: -2%;
+  max-width: 648px;
   pointer-events: none;
   z-index: -1;
+  filter: drop-shadow(0 0 100px rgba(0, 146, 71, 0.4));
 }
 @media (max-width: 1199px) {
   .improve__col {
       width: 60%;
   }
   .improve__img {
-    top: 0%;
-    max-width: 49%;
+    top: 12%;
+    max-width: 39%;
   }
 }
 @media (max-width: 991px) {
   .improve__img{
     position: relative;
     max-width: 100%;
+    top: 0;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0 0 100px rgba(0, 146, 71, 0.3));
   }
   .improve__col{
     width: 100%;
